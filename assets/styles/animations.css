@@ -1,0 +1,135 @@
+:root {
+  --animation-delay: 0.2s;
+  --animation-duration: 0.8s;
+}
+
+/* translate X */
+.first-section article .inner-content {
+  transform: translateX(-4rem);
+}
+
+/* translate Y */
+.sidebar li a,
+.main-section .inner-content,
+.secondary-section .inner-content,
+.third-section .content {
+  transform: translateY(4rem);
+}
+
+/* opacity */
+.sidebar li a,
+.main-section .inner-content,
+.first-section article .inner-content,
+.secondary-section .inner-content,
+.secondary-section .inner-content article span,
+.third-section .content {
+  opacity: 0;
+}
+
+/* before overlay */
+.first-section article > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* scale */
+.secondary-section .inner-content article span {
+  transform: scale(0.25);
+}
+
+.sidebar.run-animation li:nth-child(1) a {
+  animation: translateY var(--animation-duration) ease forwards
+      calc(var(--animation-delay)),
+    opacity var(--animation-duration) ease forwards calc(var(--animation-delay));
+}
+
+.sidebar.run-animation li:nth-child(2) a {
+  animation: translateY var(--animation-duration) ease forwards
+      calc(var(--animation-delay) * 2),
+    opacity var(--animation-duration) ease forwards
+      calc(var(--animation-delay) * 2);
+}
+.sidebar.run-animation li:nth-child(3) a {
+  animation: translateY var(--animation-duration) ease forwards
+      calc(var(--animation-delay) * 3),
+    opacity var(--animation-duration) ease forwards
+      calc(var(--animation-delay) * 3);
+}
+
+.sidebar.run-animation li:nth-child(4) a {
+  animation: translateY var(--animation-duration) ease forwards
+      calc(var(--animation-delay) * 4),
+    opacity var(--animation-duration) ease forwards
+      calc(var(--animation-delay) * 4);
+}
+
+.main-section .inner-content.run-animation {
+  animation: translateY var(--animation-duration) ease forwards,
+    opacity var(--animation-duration) ease forwards;
+}
+
+.first-section article.run-animation a::before {
+  animation: backgroundBeforeOverlay var(--animation-duration) ease forwards;
+}
+
+.first-section article.run-animation .inner-content {
+  animation: translateX var(--animation-duration) ease forwards,
+    opacity var(--animation-duration) ease forwards;
+}
+
+.secondary-section.run-animation .inner-content {
+  animation: translateY var(--animation-duration) ease forwards,
+    opacity var(--animation-duration) ease forwards;
+}
+
+.secondary-section .inner-content article span.run-animation {
+  animation: scale var(--animation-duration) ease forwards,
+    opacity var(--animation-duration) ease forwards;
+}
+
+.secondary-section .inner-content article:nth-child(2n) span.run-animation {
+  animation: scale var(--animation-duration) ease forwards
+      calc(var(--animation-delay) * 1.5),
+    opacity var(--animation-duration) ease forwards
+      calc(var(--animation-delay) * 1.5);
+}
+
+.third-section.run-animation .content {
+  animation: translateY var(--animation-duration) ease forwards,
+    opacity var(--animation-duration) ease forwards;
+}
+
+@keyframes translateY {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes opacity {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundBeforeOverlay {
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes translateX {
+  to {
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1);
+  }
+}
