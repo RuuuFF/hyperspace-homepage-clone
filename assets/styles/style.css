@@ -331,7 +331,7 @@ main {
 .features {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 0.5px solid var(--white-op0-15);
+  border: 1px solid var(--white-op0-15);
   border-radius: 0.4rem;
   margin-bottom: 3.4rem;
 }
