@@ -404,6 +404,7 @@ main {
 .textarea-field {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .textarea-field {
@@ -422,12 +423,14 @@ main {
 .input-field input {
   padding: 0 1.7rem;
   height: 4.7rem;
+  width: 100%;
 }
 
 .textarea-field textarea {
   padding: 1.3rem 1.7rem;
   resize: vertical;
   height: 17.8rem;
+  width: 100%;
 }
 
 .input-field input,
