@@ -100,6 +100,13 @@
       calc(var(--animation-delay) * 1.5);
 }
 
+@media (max-width: 980px) {
+  .secondary-section .inner-content article:nth-child(2n) span.run-animation {
+    animation: scale var(--animation-duration) ease forwards,
+      opacity var(--animation-duration) ease forwards;
+  }
+}
+
 .third-section.run-animation .content {
   animation: translateY var(--animation-duration) ease forwards,
     opacity var(--animation-duration) ease forwards;
