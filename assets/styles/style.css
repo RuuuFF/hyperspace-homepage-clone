@@ -251,12 +251,13 @@ main {
   object-fit: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .main-section .inner-content {
   padding: 6.9rem;
   width: 100%;
+  max-width: 88rem;
 }
 
 .main-section p {
@@ -309,7 +310,7 @@ main {
 }
 
 .first-section article .content {
-  width: 100%;
+  width: min(100%, 88rem);
   height: 100%;
   display: flex;
   align-items: center;
@@ -320,6 +321,10 @@ main {
 .secondary-section {
   padding: 6.9rem;
   background-color: var(--secondary-section-bg);
+}
+
+.secondary-section .inner-content {
+  max-width: 110rem;
 }
 
 .features {
@@ -371,6 +376,10 @@ main {
 .third-section {
   background-color: var(--third-section-bg);
   padding: 6.9rem;
+}
+
+.third-section .content {
+  max-width: 110rem;
 }
 
 .third-section .form-address {
