@@ -1,1 +1,5 @@
-/* ainda não está pronto */
+@media (min-width: 1380px) {
+  :root {
+    font-size: 81.25%; /* 13px */
+  }
+}
