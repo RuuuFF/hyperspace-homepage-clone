@@ -3,3 +3,43 @@
     font-size: 81.25%; /* 13px */
   }
 }
+
+@media (max-width: 1280px) {
+  .sidebar {
+    height: 5.6rem;
+    width: 100%;
+    z-index: 10000;
+  }
+
+  .side-content {
+    padding: 0;
+  }
+
+  .side-content nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .side-content nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 48.5rem;
+  }
+
+  .side-content nav li + li {
+    margin: 0 0 0 3rem;
+  }
+
+  .side-content nav a {
+    padding: 0;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    text-align: center;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}
