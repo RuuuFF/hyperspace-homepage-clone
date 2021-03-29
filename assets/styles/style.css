@@ -157,6 +157,7 @@ a.anchor-border-bottom:hover::after {
 
 /* ===== SIDEBAR ===== */
 .sidebar {
+  background-color: var(--body-bg-color);
   position: fixed;
   top: 0;
   left: 0;
