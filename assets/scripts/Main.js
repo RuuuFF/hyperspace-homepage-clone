@@ -3,7 +3,7 @@ import { Animation } from './Animation.js'
 
 const Main = {
   checkBoxes() {
-    const triggerBottom = window.innerHeight / 100 * 75
+    const triggerBottom = window.innerHeight / 100 * 90
     const triggerCenter = window.innerHeight / 100 * 55
   
     Section.sectionCheck(triggerCenter)
