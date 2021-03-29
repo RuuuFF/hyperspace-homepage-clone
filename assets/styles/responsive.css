@@ -65,7 +65,7 @@
   .features {
     display: grid;
     grid-template-columns: 1fr;
-    border: 0.5px solid var(--white-op0-15);
+    border: 1px solid var(--white-op0-15);
   }
 
   .features article + article + article {
@@ -76,7 +76,8 @@
     border-left: 0;
   }
 
-  .features article + article {
+  .features article + article,
+  .features article + article + article {
     border-top: 1px solid var(--white-op0-15);
   }
 
@@ -95,5 +96,73 @@
     border-top: 1px solid var(--white-op0-15);
     padding: 6.4rem 0 0 0;
     margin-top: 6.4rem;
+  }
+}
+
+@media (max-width: 740px) {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    margin-bottom: 1.6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p,
+  span {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-section {
+    height: auto;
+    padding: 3.2rem 0;
+  }
+
+  .main-section .inner-content {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .main-section p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  .first-section article .content {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .secondary-section {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .features article {
+    padding: 4rem 2.4rem 4rem 8.8rem;
+  }
+
+  .features article span {
+    top: 3.4rem;
+    left: 2.4rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .third-section {
+    padding: 4.8rem 3.2rem;
+  }
+
+  footer {
+    padding: 4.8rem 3.2rem;
   }
 }
