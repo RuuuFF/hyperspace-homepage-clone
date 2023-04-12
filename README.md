@@ -1,5 +1,5 @@
 # 📚 Hyperspace
-Reprodução da página <a href="https://html5up.net/uploads/demos/hyperspace/">Hyperspace</a> com o objetivo de praticar minhas habilidades em HTML, CSS, JavaScript e Design Responsivo. Além disso, foram implementadas animações de hover e rolagem para tornar a experiência do usuário mais interativa e atraente.
+UI Clone da página <a href="https://html5up.net/uploads/demos/hyperspace/">Hyperspace</a> com o objetivo de praticar minhas habilidades em HTML, CSS, JavaScript e Design Responsivo. Além disso, foram implementadas animações de hover e rolagem para tornar a experiência do usuário mais interativa e atraente.
 
 ## ✈️ Tecnologias
 - HTML
